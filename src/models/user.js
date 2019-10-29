@@ -15,7 +15,7 @@ const UserSchema  = new mongoose.Schema({
 	password: {
 		type: String,
 		required: true,
-		select: false
+		select: false // significa que quando a gente buscar um usuario, nao quero que o campo password esteja junto
 	},
 	createdAt: {
 		type: Date,
